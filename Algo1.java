@@ -10,12 +10,24 @@ public class Algo1{
         scanner.nextLine();
 
         int i=0;
+        int j=1;
+        int newi=0;
+        boolean flag=true;
+
+        System.out.print(0+","+1+",");
 
         if(input>0){
             do{
-                System.out.print(i+",");
-                i++;
-            }while(i<input+1);
+                newi=i+j;
+
+                if(newi<input){
+                    i=j;
+                    j=newi;
+                    System.out.print(newi+",");
+                }else{
+                    flag=false;
+                }
+            }while(flag);
         }else{
             System.out.println("invalid number");
         }
