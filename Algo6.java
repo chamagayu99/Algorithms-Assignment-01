@@ -9,7 +9,7 @@ public class Algo6 {
         String sentence=scanner.nextLine().strip();
 
         if(sentence.isBlank()){
-            System.out.println("Invalid Text");
+            System.out.println("Invalid sentence");
         }else{
             for(int i=(sentence.length()-1);i>-1;i--){
                 System.out.print(sentence.charAt(i));
