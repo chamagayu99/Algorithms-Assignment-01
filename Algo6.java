@@ -5,7 +5,17 @@ public class Algo6 {
 
     public static void main(String[] args) {
 
-        
+        System.out.print("Enter a text:");
+        String sentence=scanner.nextLine().strip();
+
+        if(sentence.isBlank()){
+            System.out.println("Invalid Text");
+        }else{
+            for(int i=(sentence.length()-1);i>-1;i--){
+                System.out.print(sentence.charAt(i));
+            }
+        }
+
         
     }
     
